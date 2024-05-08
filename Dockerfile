@@ -1,5 +1,5 @@
 # Use the official Python image as a base
-FROM python:3.9
+FROM python:3.10
 
 # Set environment variables - prevent Python from buffering stdout and stderr
 ENV PYTHONUNBUFFERED=1

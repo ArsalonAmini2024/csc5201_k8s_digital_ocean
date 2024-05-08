@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-cart-api
+  labels:
+    app: flask-cart-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-cart-api
+  template:
+    metadata:
+      labels:
+        app: flask-cart-api
+    spec:
+      containers:
+        - name: flask-cart-api
+          image: registry.digitalocean.com/flask-cart-registry/flask-cart-api:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
