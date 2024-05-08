@@ -7,10 +7,10 @@ POST: Add a new item to the cart.
 PATCH: Update the quantity of an existing item.
 DELETE: Remove an item from the cart.
 
+Running outside a container: 
 
-Swagger Docs - Access: 
-
-- Run the app locally after creating a python env and installing flask
+- Download the github repo
+- create a python env
+- download the dependencies flask flask-restx
 - Once the app is running, Swagger UI will be available at http://127.0.0.1:5000/.
 
-If you have an error try installing: pip install flask-restx
